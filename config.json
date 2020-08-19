@@ -13,7 +13,7 @@
         "frame_shift_ms": null,  // stft window hop-lengh in ms. If null, 'hop_length' is used.
 
         // Audio processing parameters
-        "sample_rate": 44100,   // DATASET-RELATED: wav sample-rate. If different than the original data, it is resampled.
+        "sample_rate": 22000,   // DATASET-RELATED: wav sample-rate. If different than the original data, it is resampled.
         "preemphasis": 0.0,     // pre-emphasis to reduce spec noise and make it more structured. If 0.0, no -pre-emphasis.
         "ref_level_db": 20,     // reference level db, theoretically 20db is the sound of air.
 
@@ -28,7 +28,7 @@
         // MelSpectrogram parameters
         "num_mels": 80,         // size of the mel spec frame.
         "mel_fmin": 0.0,        // minimum freq level for mel-spec. ~50 for male and ~95 for female voices. Tune for dataset!!
-        "mel_fmax": 10000.0,     // maximum freq level for mel-spec. Tune for dataset!!
+        "mel_fmax": 8000.0,     // maximum freq level for mel-spec. Tune for dataset!!
 
         // Normalization parameters
         "signal_norm": true,    // normalize spec values. Mean-Var normalization if 'stats_path' is defined otherwise range normalization defined by the other params.
