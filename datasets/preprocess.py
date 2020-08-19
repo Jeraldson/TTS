@@ -124,11 +124,11 @@ def mailabs(root_path, meta_files=None):
     return items
 
 
-def ljspeech(root_path, meta_file):
+def menka(root_path, meta_file):
     """Normalizes the Nancy meta data file to TTS format"""
     txt_file = os.path.join(root_path, meta_file)
     items = []
-    speaker_name = "ljspeech"
+    speaker_name = "menka"
     with open(txt_file, 'r') as ttf:
         for line in ttf:
             cols = line.split('|')
